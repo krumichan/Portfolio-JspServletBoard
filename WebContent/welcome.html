@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>학사관리 시스템</title>
+
+<script>
+	function goLoginForm() {
+		var form = document.loginForm;
+		
+		form.action = "loginForm.do";
+		form.method = "post";
+		
+		form.submit();
+	}
+	
+	function goTeacherInsertForm() {
+		var form = document.teacherInsertForm;
+		
+		form.action = "teacherInsertForm.do";
+		form.method = "post";
+		
+		form.submit();
+	}
+</script>
+
+<style>
+	.customFont {
+		color 		: blue;
+		font-size 	: 32px;
+	}
+</style>
+
+</head>
+<body>
+<p/>
+
+<form name="loginForm"></form>
+<form name="teacherInsertForm"></form>
+
+<center>
+	<b><font class="customFont">학사관리에 오신걸 환영합니다.</font></b><br/>
+	<font class="customFont"><a href="javascript:goLoginForm()">[교수 로그인]</a></font>
+	<font class="customFont"><a href="javascript:goTeacherInsertForm()">[교수 등록]</a></font>
+</center>
+
+</body>
+</html>
